@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
+using System.Threading;
 
 namespace TechFundamentals
 {
@@ -269,24 +270,23 @@ namespace TechFundamentals
 
         private static void P13HolidaysBetweenTwoDates()
         {
-            var startDate = DateTime.ParseExact(Console.ReadLine(), "d.m.yyyy", CultureInfo.InvariantCulture);
-            var endDate = DateTime.ParseExact(Console.ReadLine(), "d.m.yyyy", CultureInfo.InvariantCulture);
-            var holidaysCount = 0;
+            var startDate = DateTime.ParseExact(Console.ReadLine(), "d.M.yyyy", CultureInfo.InvariantCulture);
+            var endDate = DateTime.ParseExact(Console.ReadLine(), "d.M.yyyy", CultureInfo.InvariantCulture);
+            int holidaysCount = 0;
             if (startDate >= endDate)
             {
                 Console.WriteLine(0);
             }
             else
             {
-                for (DateTime date = startDate; date <= endDate; date.AddDays(1))
+                for (DateTime date = startDate; date <= endDate; date = date.AddDays(1))
                 {
-                    if (date.DayOfWeek == DayOfWeek.Saturday && date.DayOfWeek == DayOfWeek.Sunday)
+                    if (date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday)
                     {
                         holidaysCount++;
-                        Console.WriteLine(holidaysCount);
                     }
                 }
-
+                Console.WriteLine(holidaysCount);
             }
 
         }

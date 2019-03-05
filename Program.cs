@@ -7,8 +7,9 @@ namespace TechFundamentals
         static void Main(string[] args)
         {
             //IntroAndBasicSyntaxLab.Tasks();
-            IntroAndBasicSyntaxExercise.Tasks();
+            //IntroAndBasicSyntaxExercise.Tasks();
             //DataTypesAndVariablesLab.Tasks();
+            ArraysExercise.Tasks();
         }
     }
 }
