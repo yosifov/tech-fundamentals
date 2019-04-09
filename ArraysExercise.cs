@@ -12,7 +12,8 @@
             //P01Train();
             //P02CommonElementsV1();
             //P02CommonElementsV2();
-            P03ZigZagArrays();
+            //P03ZigZagArrays();
+            P04ArrayRotation();
         }
 
         private static void P01Train()
@@ -105,6 +106,34 @@
             }
             Console.WriteLine(firstElements);
             Console.WriteLine(secondElements);
+        }
+
+        private static void P04ArrayRotation()
+        {
+            int[] numbers = Console.ReadLine()
+                .Split(" ")
+                .Select(int.Parse)
+                .ToArray();
+
+            int cycles = int.Parse(Console.ReadLine());
+
+            int arrLenght = numbers.Length;
+
+            int[] newArr = new int[numbers.Length];
+
+            for (int i = 0; i < cycles; i++)
+            {
+                newArr[numbers.Length - 1] = numbers[0];
+                for (int j = 0; j < newArr.Length - 1; j++)
+                {
+                    newArr[j] = numbers[j + 1];
+                }
+                for (int k = 0; k < newArr.Length; k++)
+                {
+                    numbers[k] = newArr[k];
+                }
+            }
+            Console.WriteLine(string.Join(" ", newArr));
         }
     }
 }
