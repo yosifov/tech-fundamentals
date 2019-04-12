@@ -4,6 +4,14 @@
 
     class PrintingTriangle
     {
+        public static void Execute()
+        {
+            Console.Write("Enter Max Number: ");
+            int maxNumber = int.Parse(Console.ReadLine());
+            PrintTriangle(maxNumber);
+            PrintReverseTriangle(maxNumber - 1);
+        }
+
         public static void PrintTriangle(int maxNumber)
         {
             for (int i = 1; i <= maxNumber; i++)

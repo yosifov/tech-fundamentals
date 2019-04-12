@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TechFundamentals
+﻿namespace TechFundamentals
 {
     class Program
     {
@@ -11,10 +9,10 @@ namespace TechFundamentals
             //DataTypesAndVariablesLab.Tasks();
             //ArraysExercise.Tasks();
             //MethodsLab.Tasks();
-            Console.Write("Enter Max Number: ");
-            int maxNumber = int.Parse(Console.ReadLine());
-            Methods.PrintingTriangle.PrintTriangle(maxNumber);
-            Methods.PrintingTriangle.PrintReverseTriangle(maxNumber - 1);
+            //Methods.PrintingTriangle.Execute();
+            //Methods.Calculations.Execute();
+            //Methods.MathPower.Execute();
+            Methods.GreaterValue.Execute();
         }
     }
 }
