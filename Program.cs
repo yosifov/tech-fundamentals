@@ -16,7 +16,8 @@
 			//Methods.Orders.Execute();
 			//Methods.Rectangle.Execute();
 			//Methods.RepeatSting.Execute();
-			Methods.MultiplyEvens.Execute();
+			//Methods.MultiplyEvens.Execute();
+			Methods.MathOperations.Execute();
         }
     }
 }
