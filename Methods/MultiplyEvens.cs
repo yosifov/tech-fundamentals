@@ -38,7 +38,7 @@
 		{
 			int result = 0;
 
-			for (int i = 1; i <= number.ToString().Length - 1; i += 2)
+			for (int i = 1; i < number.ToString().Length; i += 2)
 			{
 				result += int.Parse(number.ToString()[i].ToString());
 			}
