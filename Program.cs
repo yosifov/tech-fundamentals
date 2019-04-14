@@ -12,7 +12,8 @@
             //Methods.PrintingTriangle.Execute();
             //Methods.Calculations.Execute();
             //Methods.MathPower.Execute();
-            Methods.GreaterValue.Execute();
+            //Methods.GreaterValue.Execute();
+			Methods.Orders.Execute();
         }
     }
 }
