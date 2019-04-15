@@ -24,6 +24,7 @@
             //Methods.PasswordValidator.Exercise();
             //Methods.AddAndSubstract.Execute();
             //Methods.MiddleCharacters.Execute();
+            Methods.NxNMatrix.Execute();
         }
     }
 }
