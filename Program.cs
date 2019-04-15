@@ -21,7 +21,9 @@
             //Methods.SmallestNumber.Execute();
             //Methods.VowelsCount.Execute();
             //Methods.CharactersInRange.Execute();
-            Methods.PasswordValidator.Exercise();
+            //Methods.PasswordValidator.Exercise();
+            //Methods.AddAndSubstract.Execute();
+            //Methods.MiddleCharacters.Execute();
         }
     }
 }
