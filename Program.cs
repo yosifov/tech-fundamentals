@@ -20,7 +20,8 @@
             //Methods.MathOperations.Execute();
             //Methods.SmallestNumber.Execute();
             //Methods.VowelsCount.Execute();
-            Methods.CharactersInRange.Execute();
+            //Methods.CharactersInRange.Execute();
+            Methods.PasswordValidator.Exercise();
         }
     }
 }
