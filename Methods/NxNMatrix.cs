@@ -1,6 +1,7 @@
 ﻿namespace TechFundamentals.Methods
 {
     using System;
+    using System.Text;
 
     class NxNMatrix
     {
@@ -14,11 +15,22 @@
         {
             for (int i = 1; i <= n; i++)
             {
+                StringBuilder sb = new StringBuilder();
+
                 for (int j = 1; j <= n; j++)
                 {
-                    Console.Write(n + " ");
+                    if (j == n)
+                    {
+                        sb.Append(n);
+                    }
+                    else
+                    {
+                        sb.Append(n);
+                        sb.Append(" ");
+                    }
                 }
-                Console.WriteLine();
+
+                Console.WriteLine(sb.ToString());
             }
         }
     }
