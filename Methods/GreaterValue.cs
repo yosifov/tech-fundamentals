@@ -7,7 +7,7 @@
         public static void Execute()
         {
             string type = Console.ReadLine();
-            switch (type)
+            switch (type.ToLower())
             {
                 case "int":
                     int firstNumber = int.Parse(Console.ReadLine());
