@@ -19,7 +19,8 @@
             //Methods.MultiplyEvens.Execute();
             //Methods.MathOperations.Execute();
             //Methods.SmallestNumber.Execute();
-            Methods.VowelsCount.Execute();
+            //Methods.VowelsCount.Execute();
+            Methods.CharactersInRange.Execute();
         }
     }
 }
