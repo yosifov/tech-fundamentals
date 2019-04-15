@@ -18,7 +18,8 @@
             //Methods.RepeatSting.Execute();
             //Methods.MultiplyEvens.Execute();
             //Methods.MathOperations.Execute();
-            Methods.SmallestNumber.Execute();
+            //Methods.SmallestNumber.Execute();
+            Methods.VowelsCount.Execute();
         }
     }
 }
