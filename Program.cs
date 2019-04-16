@@ -26,6 +26,7 @@
             //Methods.MiddleCharacters.Execute();
             //Methods.NxNMatrix.Execute();
             //Methods.FactorialDivision.Execute();
+            System.Console.WriteLine("Fundamentals");
         }
     }
 }
