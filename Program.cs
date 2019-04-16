@@ -25,7 +25,7 @@
             //Methods.AddAndSubstract.Execute();
             //Methods.MiddleCharacters.Execute();
             //Methods.NxNMatrix.Execute();
-            Methods.FactorialDivision.Execute();
+            //Methods.FactorialDivision.Execute();
         }
     }
 }
