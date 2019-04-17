@@ -33,7 +33,8 @@
             //Methods.NxNMatrix.Execute();
             //Methods.FactorialDivision.Execute();
             //Methods.PalindromeIntegers.Execute();
-            Methods.TopNumber.Execute();
+            //Methods.TopNumber.Execute();
+            Methods.ArrayManipulator.Execute();
         }
     }
 }
