@@ -4,11 +4,17 @@
     {
         static void Main(string[] args)
         {
+            // Intro and Basic Syntax
             //IntroAndBasicSyntaxLab.Tasks();
             //IntroAndBasicSyntaxExercise.Tasks();
+
+            // Data Types and Variables
             //DataTypesAndVariablesLab.Tasks();
+
+            // Arrays
             //ArraysExercise.Tasks();
-            //MethodsLab.Tasks();
+
+            // Methods
             //Methods.PrintingTriangle.Execute();
             //Methods.Calculations.Execute();
             //Methods.MathPower.Execute();
@@ -26,7 +32,8 @@
             //Methods.MiddleCharacters.Execute();
             //Methods.NxNMatrix.Execute();
             //Methods.FactorialDivision.Execute();
-            Methods.PalindromeIntegers.Execute();
+            //Methods.PalindromeIntegers.Execute();
+            Methods.TopNumber.Execute();
         }
     }
 }
