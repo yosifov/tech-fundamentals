@@ -2,22 +2,21 @@
 {
     using System;
     using System.Linq;
-    using System.Text;
 
     class ArrayManipulator
     {
         public static void Execute()
         {
-            string initNumbers = Console.ReadLine();
-            string[] numArray = initNumbers.Split(" ");
-            string command = Console.ReadLine();
-            int elementsCounter = 0;
-            while (command.ToLower() != "end")
+            int[] numArray = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+            string command = Console.ReadLine().ToLower();
+
+            while (command != "end")
             {
-                if (command.ToLower().Contains("exchange"))
+                if (command.Contains("exchange"))
                 {
                     int index = int.Parse(command.Substring(9));
-                    if (index >= numArray.Length)
+
+                    if (index >= numArray.Length || index < 0)
                     {
                         Console.WriteLine("Invalid index");
                     }
@@ -26,53 +25,24 @@
                         ExchangeArray(numArray, index);
                     }
                 }
-                if (command.ToLower().Contains("max"))
+                if (command.Contains("max"))
                 {
-                    if (command.ToLower().Contains("odd"))
+                    if (command.Contains("odd"))
                     {
-                        if (OddNumbers(numArray) != null)
+                        if (OddNumbers(numArray).Length > 0)
                         {
-                            Console.WriteLine(Array.IndexOf(numArray, OddNumbers(numArray).Max().ToString()));
+                            Console.WriteLine(Array.IndexOf(numArray, OddNumbers(numArray).Max()));
                         }
                         else
                         {
                             Console.WriteLine("No matches");
                         }
                     }
-                    else if (command.ToLower().Contains("even"))
+                    else if (command.Contains("even"))
                     {
-                        if (EvenNumbers(numArray) != null)
+                        if (EvenNumbers(numArray).Length > 0)
                         {
-                            Console.WriteLine(Array.IndexOf(numArray, EvenNumbers(numArray).Max().ToString()));
-                        }
-                        else
-                        {
-                            Console.WriteLine("No matches");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid command!");
-                    }
-                }
-                if (command.ToLower().Contains("min"))
-                {
-                    if (command.ToLower().Contains("odd"))
-                    {
-                        if (OddNumbers(numArray) != null)
-                        {
-                            Console.WriteLine(Array.IndexOf(numArray, OddNumbers(numArray).Min().ToString()));
-                        }
-                        else
-                        {
-                            Console.WriteLine("No matches");
-                        }
-                    }
-                    else if (command.ToLower().Contains("even"))
-                    {
-                        if (EvenNumbers(numArray) != null)
-                        {
-                            Console.WriteLine(Array.IndexOf(numArray, EvenNumbers(numArray).Min().ToString()));
+                            Console.WriteLine(Array.IndexOf(numArray, EvenNumbers(numArray).Max()));
                         }
                         else
                         {
@@ -84,18 +54,47 @@
                         Console.WriteLine("Invalid command!");
                     }
                 }
-                if (command.ToLower().Contains("first"))
+                if (command.Contains("min"))
                 {
-                    if (command.ToLower().Contains("even"))
+                    if (command.Contains("odd"))
+                    {
+                        if (OddNumbers(numArray).Length > 0)
+                        {
+                            Console.WriteLine(Array.IndexOf(numArray, OddNumbers(numArray).Min()));
+                        }
+                        else
+                        {
+                            Console.WriteLine("No matches");
+                        }
+                    }
+                    else if (command.Contains("even"))
+                    {
+                        if (EvenNumbers(numArray).Length > 0)
+                        {
+                            Console.WriteLine(Array.IndexOf(numArray, EvenNumbers(numArray).Min()));
+                        }
+                        else
+                        {
+                            Console.WriteLine("No matches");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid command!");
+                    }
+                }
+
+                int elementsCounter;
+
+                if (command.Contains("first"))
+                {
+                    if (command.Contains("even"))
                     {
                         elementsCounter = int.Parse(command.Substring(5, command.Length - 9));
+
                         if (elementsCounter > numArray.Length)
                         {
                             Console.WriteLine("Invalid count");
-                        }
-                        else if (EvenNumbers(numArray) == null)
-                        {
-                            Console.WriteLine("[]");
                         }
                         else
                         {
@@ -104,20 +103,20 @@
                                 elementsCounter = EvenNumbers(numArray).Length;
                             }
                             Console.Write("[");
-                            Console.Write(string.Join(", ", FirstNElements(EvenNumbers(numArray), elementsCounter)));
+                            if (EvenNumbers(numArray).Length > 0)
+                            {
+                                Console.Write(string.Join(", ", FirstNElements(EvenNumbers(numArray), elementsCounter)));
+                            }
                             Console.WriteLine("]");
                         }
                     }
-                    else if (command.ToLower().Contains("odd"))
+                    else if (command.Contains("odd"))
                     {
                         elementsCounter = int.Parse(command.Substring(5, command.Length - 8));
+
                         if (elementsCounter > numArray.Length)
                         {
                             Console.WriteLine("Invalid count");
-                        }
-                        else if (OddNumbers(numArray) == null)
-                        {
-                            Console.WriteLine("[]");
                         }
                         else
                         {
@@ -126,23 +125,23 @@
                                 elementsCounter = OddNumbers(numArray).Length;
                             }
                             Console.Write("[");
-                            Console.Write(string.Join(", ", FirstNElements(OddNumbers(numArray), elementsCounter)));
+                            if (OddNumbers(numArray).Length > 0)
+                            {
+                                Console.Write(string.Join(", ", FirstNElements(OddNumbers(numArray), elementsCounter)));
+                            }
                             Console.WriteLine("]");
                         }
                     }
                 }
-                if (command.ToLower().Contains("last"))
+                if (command.Contains("last"))
                 {
-                    if (command.ToLower().Contains("even"))
+                    if (command.Contains("even"))
                     {
                         elementsCounter = int.Parse(command.Substring(5, command.Length - 9));
+
                         if (elementsCounter > numArray.Length)
                         {
                             Console.WriteLine("Invalid count");
-                        }
-                        else if (EvenNumbers(numArray) == null)
-                        {
-                            Console.WriteLine("[]");
                         }
                         else
                         {
@@ -151,20 +150,19 @@
                                 elementsCounter = EvenNumbers(numArray).Length;
                             }
                             Console.Write("[");
-                            Console.Write(string.Join(", ", LastNElements(EvenNumbers(numArray), elementsCounter)));
+                            if (EvenNumbers(numArray).Length > 0)
+                            {
+                                Console.Write(string.Join(", ", LastNElements(EvenNumbers(numArray), elementsCounter)));
+                            }
                             Console.WriteLine("]");
                         }
                     }
-                    else if (command.ToLower().Contains("odd"))
+                    else if (command.Contains("odd"))
                     {
                         elementsCounter = int.Parse(command.Substring(5, command.Length - 8));
                         if (elementsCounter > numArray.Length)
                         {
                             Console.WriteLine("Invalid count");
-                        }
-                        else if (OddNumbers(numArray) == null)
-                        {
-                            Console.WriteLine("[]");
                         }
                         else
                         {
@@ -173,12 +171,16 @@
                                 elementsCounter = OddNumbers(numArray).Length;
                             }
                             Console.Write("[");
-                            Console.Write(string.Join(", ", LastNElements(OddNumbers(numArray), elementsCounter)));
+                            if (OddNumbers(numArray).Length > 0)
+                            {
+                                Console.Write(string.Join(", ", LastNElements(OddNumbers(numArray), elementsCounter)));
+                            }
                             Console.WriteLine("]");
                         }
                     }
                 }
-                command = Console.ReadLine();
+
+                command = Console.ReadLine().ToLower();
             }
             Console.Write("[");
             Console.Write(string.Join(", ", numArray));
@@ -205,71 +207,19 @@
             return newArr;
         }
 
-        private static int[] EvenNumbers(string[] numArray)
+        private static int[] EvenNumbers(int[] numArray)
         {
-            int evenCounter = 0;
-
-            for (int i = 0; i < numArray.Length; i++)
-            {
-                if (int.Parse(numArray[i]) % 2 == 0)
-                {
-                    evenCounter++;
-                }
-            }
-            if (evenCounter > 0)
-            {
-                int[] evenArr = new int[evenCounter];
-                for (int i = 0; i < numArray.Length; i++)
-                {
-                    if (int.Parse(numArray[i]) % 2 == 0)
-                    {
-                        evenArr[evenCounter - 1] = int.Parse(numArray[i]);
-                        evenCounter--;
-                    }
-                }
-                Array.Reverse(evenArr);
-                return evenArr;
-            }
-            else
-            {
-                return null;
-            }
+            return numArray.Where(x => x % 2 == 0).ToArray();
         }
 
-        private static int[] OddNumbers(string[] numArray)
+        private static int[] OddNumbers(int[] numArray)
         {
-            int oddCounter = 0;
-
-            for (int i = 0; i < numArray.Length; i++)
-            {
-                if (int.Parse(numArray[i]) % 2 != 0)
-                {
-                    oddCounter++;
-                }
-            }
-            if (oddCounter > 0)
-            {
-                int[] oddArr = new int[oddCounter];
-                for (int i = 0; i < numArray.Length; i++)
-                {
-                    if (int.Parse(numArray[i]) % 2 != 0)
-                    {
-                        oddArr[oddCounter - 1] = int.Parse(numArray[i]);
-                        oddCounter--;
-                    }
-                }
-                Array.Reverse(oddArr);
-                return oddArr;
-            }
-            else
-            {
-                return null;
-            }
+            return numArray.Where(x => x % 2 != 0).ToArray();
         }
 
-        private static void ExchangeArray(string[] numArray, int index)
+        private static void ExchangeArray(int[] numArray, int index)
         {
-            string[] newArray = new string[numArray.Length];
+            int[] newArray = new int[numArray.Length];
 
             for (int i = index + 1, j = 0; i < numArray.Length; i++, j++)
             {
