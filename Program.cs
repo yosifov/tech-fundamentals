@@ -34,7 +34,8 @@
             //Methods.FactorialDivision.Execute();
             //Methods.PalindromeIntegers.Execute();
             //Methods.TopNumber.Execute();
-            Methods.ArrayManipulator.Execute();
+            //Methods.ArrayManipulator.Execute();
+            Methods.DataTypes.Exercise();
         }
     }
 }
