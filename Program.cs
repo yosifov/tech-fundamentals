@@ -35,7 +35,8 @@
             //Methods.PalindromeIntegers.Execute();
             //Methods.TopNumber.Execute();
             //Methods.ArrayManipulator.Execute();
-            Methods.DataTypes.Exercise();
+            //Methods.DataTypes.Execute();
+            Methods.CenterPoint.Execute();
         }
     }
 }

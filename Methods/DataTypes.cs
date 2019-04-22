@@ -4,7 +4,7 @@
 
     class DataTypes
     {
-        public static void Exercise()
+        public static void Execute()
         {
             string command = Console.ReadLine();
 
