@@ -36,7 +36,12 @@
             //Methods.TopNumber.Execute();
             //Methods.ArrayManipulator.Execute();
             //Methods.DataTypes.Execute();
-            Methods.CenterPoint.Execute();
+            //Methods.CenterPoint.Execute();
+            //Methods.TribonacciSequence.Execute();
+            //Methods.MultiplicationSign.Execute();
+
+            // Lists
+            Lists.SumAdjacentEqualNumbers.Execute();
         }
     }
 }
