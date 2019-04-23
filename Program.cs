@@ -41,7 +41,9 @@
             //Methods.MultiplicationSign.Execute();
 
             // Lists
-            Lists.SumAdjacentEqualNumbers.Execute();
+            //Lists.SumAdjacentEqualNumbers.Execute();
+            //Lists.GaussTrick.Execute();
+            Lists.MergingLists.Execute();
         }
     }
 }
