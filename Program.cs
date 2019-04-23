@@ -43,7 +43,8 @@
             // Lists
             //Lists.SumAdjacentEqualNumbers.Execute();
             //Lists.GaussTrick.Execute();
-            Lists.MergingLists.Execute();
+            //Lists.MergingLists.Execute();
+            Lists.ListOfProducts.Execute();
         }
     }
 }
