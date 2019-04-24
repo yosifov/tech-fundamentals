@@ -45,7 +45,8 @@
             //Lists.GaussTrick.Execute();
             //Lists.MergingLists.Execute();
             //Lists.ListOfProducts.Execute();
-            Lists.RemoveNegativesAndReverse.Execute();
+            //Lists.RemoveNegativesAndReverse.Execute();
+            Lists.ListManipulationBasics.Execute();
         }
     }
 }
