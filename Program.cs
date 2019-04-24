@@ -44,7 +44,8 @@
             //Lists.SumAdjacentEqualNumbers.Execute();
             //Lists.GaussTrick.Execute();
             //Lists.MergingLists.Execute();
-            Lists.ListOfProducts.Execute();
+            //Lists.ListOfProducts.Execute();
+            Lists.RemoveNegativesAndReverse.Execute();
         }
     }
 }
