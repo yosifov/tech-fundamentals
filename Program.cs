@@ -46,7 +46,8 @@
             //Lists.MergingLists.Execute();
             //Lists.ListOfProducts.Execute();
             //Lists.RemoveNegativesAndReverse.Execute();
-            Lists.ListManipulationBasics.Execute();
+            //Lists.ListManipulationBasics.Execute();
+            //Lists.Train.Execute();
         }
     }
 }
