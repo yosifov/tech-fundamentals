@@ -48,6 +48,8 @@
             //Lists.RemoveNegativesAndReverse.Execute();
             //Lists.ListManipulationBasics.Execute();
             //Lists.Train.Execute();
+            //Lists.ChangeList.Execute();
+
         }
     }
 }
