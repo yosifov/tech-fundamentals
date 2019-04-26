@@ -50,7 +50,8 @@
             //Lists.Train.Execute();
             //Lists.ChangeList.Execute();
             //Lists.HouseParty.Execute();
-            Lists.ListOperations.Execute();
+            //Lists.ListOperations.Execute();
+            Lists.BombNumbers.Execute();
         }
     }
 }
