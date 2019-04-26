@@ -49,7 +49,7 @@
             //Lists.ListManipulationBasics.Execute();
             //Lists.Train.Execute();
             //Lists.ChangeList.Execute();
-
+            Lists.HouseParty.Execute();
         }
     }
 }
