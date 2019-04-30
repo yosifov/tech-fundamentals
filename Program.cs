@@ -52,7 +52,8 @@
             //Lists.HouseParty.Execute();
             //Lists.ListOperations.Execute();
             //Lists.BombNumbers.Execute();
-            Lists.CardsGame.Execute();
+            //Lists.CardsGame.Execute();
+            Lists.AppendArrays.Execute();
         }
     }
 }
