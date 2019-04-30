@@ -28,10 +28,12 @@
                 {
                     int leftDamage = 0;
                     int rightDamage = 0;
+
                     if (damage < 0)
                     {
                         break;
                     }
+
                     if (i - damage < 0)
                     {
                         leftDamage = i;
@@ -40,6 +42,7 @@
                     {
                         leftDamage = damage;
                     }
+
                     if (i + damage >= numbers.Count)
                     {
                         rightDamage = numbers.Count - 1 - i;
@@ -48,6 +51,7 @@
                     {
                         rightDamage = damage;
                     }
+
                     numbers.RemoveRange(i - leftDamage, leftDamage + 1 + rightDamage);
                 }
             }
