@@ -53,7 +53,11 @@
             //Lists.ListOperations.Execute();
             //Lists.BombNumbers.Execute();
             //Lists.CardsGame.Execute();
-            Lists.AppendArrays.Execute();
+            //Lists.AppendArrays.Execute();
+
+            // Classes
+            //Classes.AdvertisementMessage.Execute();
+            Classes.Articles.Execute();
         }
     }
 }
