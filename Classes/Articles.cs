@@ -1,6 +1,8 @@
 ﻿namespace TechFundamentals.Classes
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
     class Articles
     {
@@ -49,24 +51,61 @@
 
             for (int i = 0; i < numCommands; i++)
             {
-                string input = Console.ReadLine();
-                
-                switch (input.Split()[0])
+                var input = Console.ReadLine().Split(": ");
+                string command = input[0];
+                string inputText = input[1];
+
+                switch (command)
                 {
-                    case "Edit:":
-                        article.Edit(input.Substring(6));
+                    case "Edit":
+                        article.Edit(inputText);
                         break;
-                    case "ChangeAuthor:":
-                        article.ChangeAuthor(input.Substring(14));
+                    case "ChangeAuthor":
+                        article.ChangeAuthor(inputText);
                         break;
-                    case "Rename:":
-                        article.Rename(input.Substring(8));
+                    case "Rename":
+                        article.Rename(inputText);
                         break;
                     default:
                         break;
                 }
             }
             Console.WriteLine(article.ToString());
+        }
+
+        public static void Store()
+        {
+            int sumArticles = int.Parse(Console.ReadLine());
+            List<Articles> articles = new List<Articles>(sumArticles);
+            for (int i = 0; i < sumArticles; i++)
+            {
+                var articleData = Console.ReadLine().Split(", ");
+
+                articles.Add(new Articles(articleData[0], articleData[1], articleData[2]));
+                //articles[i].Title = articleData[0];
+                //articles[i].Content = articleData[1];
+                //articles[i].Author = articleData[2];
+            }
+            var command = Console.ReadLine();
+            var orderedArticles = new List<Articles>();
+            switch (command)
+            {
+                case "title":
+                    orderedArticles = articles.OrderBy(o => o.Title).ToList();
+                    break;
+                case "content":
+                    orderedArticles = articles.OrderBy(o => o.Content).ToList();
+                    break;
+                case "author":
+                    orderedArticles = articles.OrderBy(o => o.Author).ToList();
+                    break;
+                default:
+                    break;
+            }
+            foreach (var article in orderedArticles)
+            {
+                Console.WriteLine(article.ToString());
+            }
         }
     }
 }
