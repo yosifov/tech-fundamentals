@@ -58,7 +58,8 @@
             // Classes
             //Classes.AdvertisementMessage.Execute();
             //Classes.Articles.Execute();
-            Classes.Articles.Store();
+            //Classes.Articles.Store();
+            Classes.Students.Execute();
         }
     }
 }
