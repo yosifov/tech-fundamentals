@@ -62,9 +62,12 @@
             //Classes.Students.Execute();
 
             // Exams
+            // Mid Exam November 2018
             //Exams.MidExam041118.PartyProfit.Execute();
             //Exams.MidExam041118.DungeonestDark.Execute();
-            Exams.MidExam041118.QuestsJournal.Execute();
+            //Exams.MidExam041118.QuestsJournal.Execute();
+            // Mid Exam March 2019
+            Exams.MidExam100319.SpringVacationTrip.Execute();
         }
     }
 }
