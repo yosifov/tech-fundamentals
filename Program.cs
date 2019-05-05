@@ -62,7 +62,8 @@
             //Classes.Students.Execute();
 
             // Exams
-            Exams.MidExam041118.PartyProfit.Execute();
+            //Exams.MidExam041118.PartyProfit.Execute();
+            Exams.MidExam041118.DungeonestDark.Execute();
         }
     }
 }
