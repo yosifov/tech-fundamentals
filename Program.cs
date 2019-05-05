@@ -59,7 +59,10 @@
             //Classes.AdvertisementMessage.Execute();
             //Classes.Articles.Execute();
             //Classes.Articles.Store();
-            Classes.Students.Execute();
+            //Classes.Students.Execute();
+
+            // Exams
+            Exams.MidExam041118.PartyProfit.Execute();
         }
     }
 }
