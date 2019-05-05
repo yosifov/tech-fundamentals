@@ -68,7 +68,8 @@
             //Exams.MidExam041118.QuestsJournal.Execute();
             // Mid Exam March 2019
             //Exams.MidExam100319.SpringVacationTrip.Execute();
-            Exams.MidExam100319.HelloFrance.Execute();
+            //Exams.MidExam100319.HelloFrance.Execute();
+            Exams.MidExam100319.LastStop.Execute();
         }
     }
 }
