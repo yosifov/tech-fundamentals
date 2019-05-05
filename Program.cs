@@ -63,7 +63,8 @@
 
             // Exams
             //Exams.MidExam041118.PartyProfit.Execute();
-            Exams.MidExam041118.DungeonestDark.Execute();
+            //Exams.MidExam041118.DungeonestDark.Execute();
+            Exams.MidExam041118.QuestsJournal.Execute();
         }
     }
 }
