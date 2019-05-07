@@ -69,7 +69,12 @@
             // Mid Exam March 2019
             //Exams.MidExam100319.SpringVacationTrip.Execute();
             //Exams.MidExam100319.HelloFrance.Execute();
-            Exams.MidExam100319.LastStop.Execute();
+            //Exams.MidExam100319.LastStop.Execute();
+
+            // Associative Arrays
+            //AssocArrays.CountRealNumbers.Execute();
+            //AssocArrays.OddOccurrences.Execute();
+            AssocArrays.WordSynonyms.Execute();
         }
     }
 }
