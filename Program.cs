@@ -74,7 +74,8 @@
             // Associative Arrays
             //AssocArrays.CountRealNumbers.Execute();
             //AssocArrays.OddOccurrences.Execute();
-            AssocArrays.WordSynonyms.Execute();
+            //AssocArrays.WordSynonyms.Execute();
+            //AssocArrays.LargestThreeNumbers.Execute();
         }
     }
 }
