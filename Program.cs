@@ -76,6 +76,7 @@
             //AssocArrays.OddOccurrences.Execute();
             //AssocArrays.WordSynonyms.Execute();
             //AssocArrays.LargestThreeNumbers.Execute();
+            //AssocArrays.WordFilter.Execute();
         }
     }
 }
