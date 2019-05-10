@@ -79,7 +79,8 @@
             //AssocArrays.WordFilter.Execute();
             //AssocArrays.CountCharsInString.Execute();
             //AssocArrays.AMinerTask.Execute();
-            AssocArrays.LegendaryFarming.Execute();
+            //AssocArrays.LegendaryFarming.Execute();
+            AssocArrays.Orders.Execute();
         }
     }
 }

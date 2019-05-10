@@ -14,12 +14,9 @@
             {
                 if (!chars.ContainsKey(symbol))
                 {
-                    chars[symbol] = 1;
+                    chars[symbol] = 0;
                 }
-                else
-                {
-                    chars[symbol]++;
-                }
+                chars[symbol]++;
             }
             chars = chars.Where(x => x.Key != ' ').ToDictionary(x => x.Key, x => x.Value);
             foreach (var item in chars)

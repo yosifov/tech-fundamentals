@@ -16,9 +16,9 @@
             };
             var junkMaterials = new SortedDictionary<string, int>();
 
-            while (keyMaterials["shards"] < 250
-                && keyMaterials["fragments"] < 250
-                && keyMaterials["motes"] < 250)
+            bool findLegendaryItem = false;
+
+            while (!findLegendaryItem)
             {
                 var input = Console.ReadLine().Split();
 
@@ -32,6 +32,7 @@
                         keyMaterials[material] += quantity;
                         if (keyMaterials[material] >= 250)
                         {
+                            findLegendaryItem = true;
                             break;
                         }
                     }
