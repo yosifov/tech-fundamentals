@@ -83,7 +83,8 @@
             //AssocArrays.Orders.Execute();
             //AssocArrays.Parking.Execute();
             //AssocArrays.Courses.Execute();
-            AssocArrays.StudentAcademy.Execute();
+            //AssocArrays.StudentAcademy.Execute();
+            AssocArrays.ForceBook.Execute();
         }
     }
 }
