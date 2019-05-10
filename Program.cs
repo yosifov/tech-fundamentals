@@ -80,7 +80,8 @@
             //AssocArrays.CountCharsInString.Execute();
             //AssocArrays.AMinerTask.Execute();
             //AssocArrays.LegendaryFarming.Execute();
-            AssocArrays.Orders.Execute();
+            //AssocArrays.Orders.Execute();
+            AssocArrays.Parking.Execute();
         }
     }
 }
