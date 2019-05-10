@@ -81,7 +81,8 @@
             //AssocArrays.AMinerTask.Execute();
             //AssocArrays.LegendaryFarming.Execute();
             //AssocArrays.Orders.Execute();
-            AssocArrays.Parking.Execute();
+            //AssocArrays.Parking.Execute();
+            AssocArrays.Courses.Execute();
         }
     }
 }
