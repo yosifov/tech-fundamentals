@@ -91,7 +91,10 @@
             //Strings.RepeatString.Execute();
             //Strings.Substring.Execute();
             //Strings.TextFilter.Execute();
-            Strings.DigitsLettersAndOther.Execute();
+            //Strings.DigitsLettersAndOther.Execute();
+
+            // Regex
+            RegularExpressions.MatchFullName.Execute();
         }
     }
 }
