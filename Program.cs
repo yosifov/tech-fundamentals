@@ -84,7 +84,10 @@
             //AssocArrays.Parking.Execute();
             //AssocArrays.Courses.Execute();
             //AssocArrays.StudentAcademy.Execute();
-            AssocArrays.ForceBook.Execute();
+            //AssocArrays.ForceBook.Execute();
+
+            // Strings
+            Strings.ReverseStrings.Execute();
         }
     }
 }
