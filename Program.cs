@@ -87,7 +87,8 @@
             //AssocArrays.ForceBook.Execute();
 
             // Strings
-            Strings.ReverseStrings.Execute();
+            //Strings.ReverseStrings.Execute();
+            Strings.RepeatString.Execute();
         }
     }
 }
