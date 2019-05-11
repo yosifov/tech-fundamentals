@@ -94,7 +94,8 @@
             //Strings.DigitsLettersAndOther.Execute();
 
             // Regex
-            RegularExpressions.MatchFullName.Execute();
+            //RegularExpressions.MatchFullName.Execute();
+            RegularExpressions.MatchDates.Execute();
         }
     }
 }
