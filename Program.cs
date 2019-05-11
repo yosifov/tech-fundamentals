@@ -90,7 +90,8 @@
             //Strings.ReverseStrings.Execute();
             //Strings.RepeatString.Execute();
             //Strings.Substring.Execute();
-            Strings.TextFilter.Execute();
+            //Strings.TextFilter.Execute();
+            Strings.DigitsLettersAndOther.Execute();
         }
     }
 }
