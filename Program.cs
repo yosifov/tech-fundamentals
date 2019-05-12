@@ -92,12 +92,13 @@
             //Strings.Substring.Execute();
             //Strings.TextFilter.Execute();
             //Strings.DigitsLettersAndOther.Execute();
+            Strings.ValidUsernames.Execute();
 
             // Regex
             //RegularExpressions.MatchFullName.Execute();
             //RegularExpressions.MatchDates.Execute();
             //RegularExpressions.MatchAPhoneNumber.Execute();
-            RegularExpressions.MatchNumbers.Execute();
+            //RegularExpressions.MatchNumbers.Execute();
 
         }
     }
