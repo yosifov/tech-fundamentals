@@ -95,7 +95,8 @@
 
             // Regex
             //RegularExpressions.MatchFullName.Execute();
-            RegularExpressions.MatchDates.Execute();
+            //RegularExpressions.MatchDates.Execute();
+            RegularExpressions.MatchAPhoneNumber.Execute();
         }
     }
 }
