@@ -94,7 +94,8 @@
             //Strings.DigitsLettersAndOther.Execute();
             //Strings.ValidUsernames.Execute();
             //Strings.CharacterMultiplier.Execute();
-            Strings.ExtractFile.Execute();
+            //Strings.ExtractFile.Execute();
+            Strings.CaesarCipher.Execute();
 
             // Regex
             //RegularExpressions.MatchFullName.Execute();
