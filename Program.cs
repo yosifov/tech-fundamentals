@@ -93,7 +93,8 @@
             //Strings.TextFilter.Execute();
             //Strings.DigitsLettersAndOther.Execute();
             //Strings.ValidUsernames.Execute();
-            Strings.CharacterMultiplier.Execute();
+            //Strings.CharacterMultiplier.Execute();
+            Strings.ExtractFile.Execute();
 
             // Regex
             //RegularExpressions.MatchFullName.Execute();
