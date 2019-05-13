@@ -95,14 +95,14 @@
             //Strings.ValidUsernames.Execute();
             //Strings.CharacterMultiplier.Execute();
             //Strings.ExtractFile.Execute();
-            Strings.CaesarCipher.Execute();
+            //Strings.CaesarCipher.Execute();
 
             // Regex
             //RegularExpressions.MatchFullName.Execute();
             //RegularExpressions.MatchDates.Execute();
             //RegularExpressions.MatchAPhoneNumber.Execute();
             //RegularExpressions.MatchNumbers.Execute();
-
+            RegularExpressions.BarIncome.Execute();
         }
     }
 }
