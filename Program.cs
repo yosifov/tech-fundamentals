@@ -96,7 +96,7 @@
             //Strings.CharacterMultiplier.Execute();
             //Strings.ExtractFile.Execute();
             //Strings.CaesarCipher.Execute();
-            Strings.ReplaceRepeatingChars.Execute();
+            //Strings.ReplaceRepeatingChars.Execute();
 
             // Regex
             //RegularExpressions.MatchFullName.Execute();
