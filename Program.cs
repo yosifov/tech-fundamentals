@@ -71,7 +71,8 @@
             //Exams.MidExam100319.HelloFrance.Execute();
             //Exams.MidExam100319.LastStop.Execute();
             // Retake Final Exam 2018
-            Exams.FinalExam201218.VaporWinterSale.Execute();
+            //Exams.FinalExam201218.VaporWinterSale.Execute();
+            Exams.FinalExam201218.ActivationKeys.Execute();
 
             // Associative Arrays
             //AssocArrays.CountRealNumbers.Execute();
