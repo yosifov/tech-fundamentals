@@ -70,6 +70,8 @@
             //Exams.MidExam100319.SpringVacationTrip.Execute();
             //Exams.MidExam100319.HelloFrance.Execute();
             //Exams.MidExam100319.LastStop.Execute();
+            // Retake Final Exam 2018
+            Exams.FinalExam201218.VaporWinterSale.Execute();
 
             // Associative Arrays
             //AssocArrays.CountRealNumbers.Execute();
@@ -98,7 +100,7 @@
             //Strings.CaesarCipher.Execute();
             //Strings.ReplaceRepeatingChars.Execute();
             //Strings.MultiplyBigNumber.Execute();
-            Strings.StringExplosion.Execute();
+            //Strings.StringExplosion.Execute();
 
             // Regex
             //RegularExpressions.MatchFullName.Execute();
